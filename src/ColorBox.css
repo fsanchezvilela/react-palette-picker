@@ -26,12 +26,12 @@
   text-transform: uppercase;
   border: none;
   opacity: 0;
+  cursor: pointer;
 }
 
 .ColorBox:hover .copy-button {
   opacity: 1;
   transition: 0.5s;
-  cursor: pointer;
 }
 
 .box-content {
