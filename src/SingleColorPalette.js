@@ -4,9 +4,10 @@ import ColorBox from './ColorBox';
 class SingleColorPalette extends Component {
   constructor(props){
     super(props);
-    this._shades = gatherShades(this.props.palette, this.props.colorId);
+    this._shades = this.gatherShades(this.props.palette, this.props.colorId);
+    this.gatherShades = this.gatherShades.bind(this);
   }
-  gatherShades(palette, color){
+ gatherShades(palette, colorToFilterBy){
     let shades = []
     let allColors = palette.colors;
     for(let key in allColors){
@@ -17,13 +18,16 @@ class SingleColorPalette extends Component {
     //return all shades of given color,
     return shades.slice(1);
   }
+  
   render() {
     const colorBoxes = this._shades.map(color => {
+      return(
       <ColorBox 
         key={color.id} 
         name={color.name} 
         background={color.hex}  
         showLink={false}/>
+        );
     });
     return (
       <div className="Palette">

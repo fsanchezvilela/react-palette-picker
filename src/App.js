@@ -43,9 +43,9 @@ class App extends Component {
             }
             palette={
               generatePalette(
-              this.findPalette(routeProps.match.params.paletteId);
-            )}>
-            }/>
+              this.findPalette(routeProps.match.params.paletteId)
+            )}/>}
+          />
       </Switch>
     );
   }
