@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ColorBox, Navbar, PaletteFooter } from 'app/components/index';
-import { withStyles } from "@material-ui/styles";
+import { withStyles } from '@material-ui/core';
 import styles from "./PaletteStyles";
 
 class Palette extends Component {
