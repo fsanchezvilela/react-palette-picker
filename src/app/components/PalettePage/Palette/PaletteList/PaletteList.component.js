@@ -6,7 +6,6 @@ import styles from './PaletteListStyles';
 
 class PaletteList extends Component {
   goToPalette(id) {
-    console.log('HI');
     this.props.history.push(`/palette/${id}`);
   }
 
