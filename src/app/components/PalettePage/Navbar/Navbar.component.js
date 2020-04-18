@@ -9,7 +9,7 @@ import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import Slider from 'rc-slider';
 
-import styles from './styles/NavbarStyles';
+import styles from './NavbarStyles';
 import 'rc-slider/assets/index.css';
 
 class NavBar extends Component {

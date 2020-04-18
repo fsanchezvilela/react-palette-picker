@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Palette from './Palette';
-import PaletteList from './PaletteList';
-import SingleColorPallete from "./SingleColorPalette";
-import seedColors from './seedColors';
-import { generatePalette } from './colorHelpers';
+import { Palette, PaletteList, SingleColorPalette } from 'app/components/index';
+import seedColors from './utils/seedColors';
+import { generatePalette } from './utils/colorHelpers';
 
 class App extends Component {
   findPalette(id) {
@@ -37,7 +35,7 @@ class App extends Component {
           path="/palette/:paletteId/:colorId"
           render={
             (routeProps) =>
-            <SingleColorPallete 
+            <SingleColorPalette 
             colorId={
               routeProps.match.params.colorId
             }
