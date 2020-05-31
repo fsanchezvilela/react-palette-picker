@@ -10,3 +10,4 @@ export { default as NewPaletteForm } from 'app/components/PaletteForm/NewPalette
 export { default as DraggableColorBox } from 'app/components/PaletteForm/DraggableColorBox/DraggableColorBox.component';
 export { default as DraggableColorList } from 'app/components/PaletteForm/DraggableColorList/DraggableColorList.component';
 export { default as PaletteFormNav } from 'app/components/PaletteForm/PaletteFormNav/PaletteFormNav.component';
+export { default as ColorPickerForm } from 'app/components/PaletteForm/ColorPickerForm/ColorPickerForm.component';
