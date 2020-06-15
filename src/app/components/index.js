@@ -11,3 +11,5 @@ export { default as DraggableColorBox } from 'app/components/PaletteForm/Draggab
 export { default as DraggableColorList } from 'app/components/PaletteForm/DraggableColorList/DraggableColorList.component';
 export { default as PaletteFormNav } from 'app/components/PaletteForm/PaletteFormNav/PaletteFormNav.component';
 export { default as ColorPickerForm } from 'app/components/PaletteForm/ColorPickerForm/ColorPickerForm.component';
+//Commons
+export {default as PaletteMetaForm } from 'app/components/commons/PaletteMetaForm/PaletteMetaForm.component';
