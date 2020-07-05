@@ -1,4 +1,4 @@
-import sizes from "./sizes"
+import sizes from "app/styles/sizes";
 export default {
     root: {
       backgroundColor: "blue",
