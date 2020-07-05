@@ -23,7 +23,7 @@ class NewPaletteForm extends Component {
     super(props);
     this.state = {
       open: true,
-      colors: this.props.palettes[0].colors,
+      colors: this.props.palettes[0]?.colors,
     };
     this.addNewColor = this.addNewColor.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -90,7 +90,7 @@ class NewPaletteForm extends Component {
   render() {
     const { classes, maxColors, palettes } = this.props;
     const { open, colors } = this.state;
-    const paletteIsFull = colors.length >= maxColors;
+    const paletteIsFull = colors?.length >= maxColors;
     return (
       <div className={classes.root}>
         <PaletteFormNav
