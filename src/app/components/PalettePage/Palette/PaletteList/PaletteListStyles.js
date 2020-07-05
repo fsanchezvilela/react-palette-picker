@@ -2,14 +2,17 @@ import sizes from "app/styles/sizes.js";
 import dragonScalesBg from "app/assets/images/backgrounds/Dragon-Scales.svg";
 export default {
     root: {
-      backgroundColor: "blue",
       height: "100vh",
       display: "flex",
       alignItems: "flex-start",
       justifyContent: "center",
+      /* background by SVGBackgrounds.com */
       backgroundColor:"#1e8feb",
-      backgroundImage: `url(${dragonScalesBg})`
-
+      backgroundImage: `url(${dragonScalesBg})`,
+      overflow:"scroll",
+    },
+    heading:{
+      fontSize:"2rem",
     },
     container: {
       width: "50%",
@@ -41,11 +44,11 @@ export default {
       gridTemplateColumns: "repeat( 3 , 30% )",
       gridGap:"1.5rem",
       [sizes.down("md")]:{
-        gridTemplateColumns:"repeat(2,50%)"
+        gridTemplateColumns:"repeat(2,50%)",
       },
       [sizes.down("xs")]:{
         gridTemplateColumns:"repeat(1,100%)",
-        gridGap:"1rem",
+        gridGap:"1.4rem",
       }
     }
 }
