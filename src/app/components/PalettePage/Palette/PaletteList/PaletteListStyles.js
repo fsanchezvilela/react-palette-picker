@@ -1,4 +1,5 @@
-import sizes from "app/styles/sizes";
+import sizes from "app/styles/sizes.js";
+import dragonScalesBg from "app/assets/images/backgrounds/Dragon-Scales.svg";
 export default {
     root: {
       backgroundColor: "blue",
@@ -6,6 +7,9 @@ export default {
       display: "flex",
       alignItems: "flex-start",
       justifyContent: "center",
+      backgroundColor:"#1e8feb",
+      backgroundImage: `url(${dragonScalesBg})`
+
     },
     container: {
       width: "50%",
@@ -13,10 +17,10 @@ export default {
       alignItems: "flex-start",
       flexDirection: "column",
       flexWrap: "wrap",
-      [sizes.downp["xl"]]: {
-        width: "80%"
+      [sizes.down("xl")]: {
+        "width": "80%"
       },
-      [sizes.downp["xs"]]: {
+      [sizes.down("xs")]: {
         width: "75%"
       },
     },
@@ -36,10 +40,10 @@ export default {
       display: 'grid',
       gridTemplateColumns: "repeat( 3 , 30% )",
       gridGap:"1.5rem",
-      [sizes.down["md"]]:{
+      [sizes.down("md")]:{
         gridTemplateColumns:"repeat(2,50%)"
       },
-      [sizes.down["xs"]]:{
+      [sizes.down("xs")]:{
         gridTemplateColumns:"repeat(1,100%)",
         gridGap:"1rem",
       }
