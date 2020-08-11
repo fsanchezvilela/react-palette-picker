@@ -32,7 +32,7 @@ class NavBar extends Component {
     return (
       <nav className={classes.Navbar}>
         <div className={classes.Logo}>
-          <Link to="/">reactcolorpicker</Link>
+          <Link to="/">Colorette</Link>
         </div>
         { showingAllColors && 
           (<div>
