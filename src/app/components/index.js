@@ -13,3 +13,5 @@ export { default as PaletteFormNav } from 'app/components/PaletteForm/PaletteFor
 export { default as ColorPickerForm } from 'app/components/PaletteForm/ColorPickerForm/ColorPickerForm.component';
 //Commons
 export {default as PaletteMetaForm } from 'app/components/commons/PaletteMetaForm/PaletteMetaForm.component';
+//Page
+export { default as Page } from 'app/components/Page/Page.component';
